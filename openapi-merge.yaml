@@ -1,0 +1,5 @@
+inputs:
+  - inputFile: "./spec/_base.yaml"
+  - inputFile: './spec/spec1.yaml'
+
+output: "./openapi.yaml"

@@ -1,0 +1,12 @@
+openapi: 3.0.2
+info:
+  version: '1.0'
+  title: Test API
+  description: Just a test API
+  contact:
+    url: https://foo.bar.baz
+servers:
+  - url: https://foo.bar.baz/api
+    description: test
+
+paths:

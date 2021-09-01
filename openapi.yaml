@@ -1,0 +1,36 @@
+openapi: 3.0.3
+info:
+  version: '1.0'
+  title: Test API
+  description: Just a test API
+  contact:
+    url: 'https://foo.bar.baz'
+servers:
+  - url: 'https://foo.bar.baz/api'
+    description: test
+tags:
+  - name: Foo
+    description: All about Foo.
+paths:
+  /foo:
+    get:
+      operationId: getFoo
+      description: Gets the Foo.
+      tags:
+        - Foo
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Foo'
+components:
+  schemas:
+    Foo:
+      type: object
+      properties:
+        dateCreated:
+          type: string
+          format: date
+          example: '2017-07-21T00:00:00.000Z'
